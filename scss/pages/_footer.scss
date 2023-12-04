@@ -1,0 +1,107 @@
+@use '../globals';
+
+/**
+ *  footer content general styling
+**/
+footer {
+    background: globals.$blue-color;
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding-block: 4rem;
+    }
+
+
+    /**
+    *  main section general styling
+    **/
+    .footer-main {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+
+        ul {
+            li {
+                a {
+                    color: globals.$white-color;
+                    text-decoration: none;
+                    font-weight: 600;
+
+                    &:hover { color: globals.$red-color; }
+                    &:active { color: globals.$red-color; }
+                    &:focus { color: globals.$red-color; }
+
+                    .facebook {
+                        &:hover { color: globals.$facebook-color; }
+                        &:active { color: globals.$facebook-color; }
+                        &:focus { color: globals.$facebook-color; }
+                    }
+                    .instagram {
+                        &:hover { color: globals.$instagram-color; }
+                        &:active { color: globals.$instagram-color; }
+                        &:focus { color: globals.$instagram-color; }
+                    }
+                    .twitter {
+                        &:hover { color: globals.$twitter-color; }
+                        &:active { color: globals.$twitter-color; }
+                        &:focus { color: globals.$twitter-color; }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+    *  contact section styling
+    **/
+    .contact-links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+
+    /**
+    *  navigation and information section styling
+    **/
+    .navigation-links, .information-links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    /**
+    *  social media icon section styling
+    **/
+    .social-media-links {
+        ul {
+            display: flex;
+            gap: 1rem;
+            li {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    /**
+    *  copyright section styling
+    **/
+    .footer-copyright {
+        color: globals.$white-color;
+    }
+}

@@ -1,0 +1,82 @@
+@use '../globals';
+
+/**
+ *  header content general styling
+**/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    height: 8rem;
+    background: globals.$header-color;
+
+    nav {
+        display: flex;
+        gap: 2.5rem;
+        margin: 1rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            li {
+                font-size: 1.5rem;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: globals.$white-color;
+
+                    &:hover { color: globals.$red-color; }
+                    &:active { color: globals.$red-color; }
+                    &:focus { color: globals.$red-color; }
+                }
+                .facebook {
+                    &:hover { color: globals.$facebook-color; }
+                    &:active { color: globals.$facebook-color; }
+                    &:focus { color: globals.$facebook-color; }
+                }
+                .instagram {
+                    &:hover { color: globals.$instagram-color; }
+                    &:active { color: globals.$instagram-color; }
+                    &:focus { color: globals.$instagram-color; }
+                }
+                .twitter {
+                    &:hover { color: globals.$twitter-color; }
+                    &:active { color: globals.$twitter-color; }
+                    &:focus { color: globals.$twitter-color; }
+                }
+            }
+        }
+    }
+
+    
+    /**
+    *  button general styling
+    **/
+    .navbar_button {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding: 1.5rem 3rem;
+        border-radius: 10px;
+        color: globals.$white-color;
+        background-color: globals.$red-color;
+
+        &:hover {
+            opacity: 0.7;
+            transition: all 0.3s ease-in-out;
+        }
+        &:active {
+            opacity: 0.7;
+            transition: all 0.3s ease-in-out;
+        }
+        &:focus {
+            opacity: 0.7;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
