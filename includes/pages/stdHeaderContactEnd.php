@@ -4,4 +4,4 @@
     <title>Contact Paul Yang</title>
 </head>
 <body>
-    <?php include('content/header.php'); ?>
+    <?php include('includes/header.php'); ?>

@@ -1,10 +1,10 @@
-<?php include('content/stdHeaderStart.php'); ?>
-<?php include('content/pages/stdHeaderContactEnd.php'); ?>
+<?php include('includes/stdHeaderStart.php'); ?>
+<?php include('includes/pages/stdHeaderContactEnd.php'); ?>
 
 
 <main class="contact">
-    <h1>Vote For Me</h1>
+    <h1>Contact Us</h1>
 </main>
 
 
-<?php include('content/stdFooter.php'); ?>
+<?php include('includes/stdFooter.php'); ?>

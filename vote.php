@@ -1,5 +1,5 @@
-<?php include('content/stdHeaderStart.php'); ?>
-<?php include('content/pages/stdHeaderVoteEnd.php'); ?>
+<?php include('includes/stdHeaderStart.php'); ?>
+<?php include('includes/pages/stdHeaderVoteEnd.php'); ?>
 
 
 <main class="vote">
@@ -7,4 +7,4 @@
 </main>
 
 
-<?php include('content/stdFooter.php'); ?>
+<?php include('includes/stdFooter.php'); ?>

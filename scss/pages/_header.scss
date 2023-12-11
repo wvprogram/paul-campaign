@@ -7,8 +7,9 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     height: 8rem;
     background: globals.$header-color;
 
@@ -50,6 +51,9 @@ header {
                 }
             }
         }
+        @media screen and (max-width: 1020px) {
+            display: none;
+        }
     }
 
     
@@ -79,4 +83,125 @@ header {
             transition: all 0.3s ease-in-out;
         }
     }
+
+
+
+    /* Style the navigation menu */
+    .nav-mobile {
+        display: none;
+        position: fixed;
+        width: 100%;
+
+        .hamburger {
+            position: absolute;
+            top: 0;
+            right: 2rem;
+            z-index: 2;
+
+            .line{
+                width: 50px;
+                height: 5px;
+                background-color: globals.$white-color;
+                display: block;
+                margin: 8px auto;
+                -webkit-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &.is-active .line:nth-child(2) {
+                opacity: 0;
+            }
+    
+            &.is-active .line:nth-child(1) {
+                -webkit-transform: translateY(13px) rotate(45deg);
+                -ms-transform: translateY(13px) rotate(45deg);
+                -o-transform: translateY(13px) rotate(45deg);
+                transform: translateY(13px) rotate(45deg);
+            }
+    
+            &.is-active .line:nth-child(3) {
+                -webkit-transform: translateY(-13px) rotate(-45deg);
+                -ms-transform: translateY(-13px) rotate(-45deg);
+                -o-transform: translateY(-13px) rotate(-45deg);
+                transform: translateY(-13px) rotate(-45deg);
+            }
+        }
+
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        #mobile-links {
+            display: none;
+            width: 100%;
+            height: 100vh;
+            background-color: globals.$blue-color;
+            text-align: center;
+            position: absolute;
+            top: -4rem;
+            padding-top: 7rem;
+
+            .mobile_nav-links {
+                li {
+                    a {
+                        color: globals.$white-color;
+                        padding-block: 1rem;
+                        text-decoration: none;
+                        font-size: 20px;
+                        font-weight: 700;
+                        display: block;
+
+                        &:hover {
+                            background-color: globals.$white-color;
+                            color: globals.$red-color;
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .mobile_social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            margin-top: 2rem;
+
+            li {
+                a {
+                    font-size: 1.5rem;
+                    color: globals.$white-color;
+                }
+                .facebook {
+                    &:hover { color: globals.$facebook-color; }
+                    &:active { color: globals.$facebook-color; }
+                    &:focus { color: globals.$facebook-color; }
+                }
+                .instagram {
+                    &:hover { color: globals.$instagram-color; }
+                    &:active { color: globals.$instagram-color; }
+                    &:focus { color: globals.$instagram-color; }
+                }
+                .twitter {
+                    &:hover { color: globals.$twitter-color; }
+                    &:active { color: globals.$twitter-color; }
+                    &:focus { color: globals.$twitter-color; }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1020px) {
+            display: block;
+        }
+    }
+}
+
+.scroll-lock {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }

@@ -1,52 +1,70 @@
-<?php include('content/stdHeaderStart.php'); ?>
-<?php include('content/pages/stdHeaderHomeEnd.php'); ?>
+<?php include('includes/stdHeaderStart.php'); ?>
+<?php include('includes/pages/stdHeaderHomeEnd.php'); ?>
 
 <main class="home">
-    <div class="container">
-        <section class="home-content">
-            <!-- Need Image here -->
-            <div class="logo-content">
-                <img src="../images/pages/home/logo.png" alt="Paul Yang Logo">
-                <div class="logo-information">
-                    <h1>Paul Yang</h1>
-                    <p>Minnesota Supreme Court</p>
-                </div> 
-            </div>
+    <div class="bg-image">
+        <div class="container">
+            <section class="home-content">
+                <!-- Need Image here -->
+                <div class="logo-content">
+                    <img src="../images/pages/home/logo.png" alt="Paul Yang Logo">
+                    <div class="logo-information">
+                        <h1>Paul Yang</h1>
+                        <p>Minnesota Supreme Court</p>
+                    </div> 
+                </div>
 
-            <div class="form-container">
-                <h1>Join Our Campaign</h1>
-                <form id="join-campaign" action="#">
-                    <ul>
-                        <li id="formFname">
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="fname">
-                            <!-- <small class="error">First Name is required</small> -->
-                        </li>
-                        <li id="formLname">
-                            <label for="lname">Last Name</label>
-                            <input type="text" id="lname" name="lname">
-                            <!-- <small class="error">Last Name is required</small> -->
-                        </li>
-                        <li id="formZip">
-                            <label for="zip">Zip Code</label>
-                            <input type="text" id="zip" name="zip">
-                            <!-- <small class="error">Zip Code is required</small> -->
-                        </li>
-                        <li id="formEmail">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
-                            <!-- <small class="error">Email is required</small> -->
-                        </li>
-                    </ul>
-                    <input class="submitButton" type="submit" value="Submit" />
-                </form>
-            </div>
-        </section>
+                <div class="form-container">
+                    <h1>Join Our Campaign</h1>
+                    <form id="join-campaign" action="#">
+                        <ul>
+                            <li id="formFname">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="fname">
+                                <!-- <small class="error">First Name is required</small> -->
+                            </li>
+                            <li id="formLname">
+                                <label for="lname">Last Name</label>
+                                <input type="text" id="lname" name="lname">
+                                <!-- <small class="error">Last Name is required</small> -->
+                            </li>
+                            <li id="formZip">
+                                <label for="zip">Zip Code</label>
+                                <input type="text" id="zip" name="zip">
+                                <!-- <small class="error">Zip Code is required</small> -->
+                            </li>
+                            <li id="formEmail">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                                <!-- <small class="error">Email is required</small> -->
+                            </li>
+                        </ul>
+                        <input class="submitButton" type="submit" value="Submit" />
+                    </form>
+                </div>
+            </section>
+        </div>
     </div>
     <div>
         <section class="home-banner">
-            <div>
-                <img src="images/pages/home/vote-banner.jpg" alt="Vote Banner">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/pages/home/vote-banner.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/pages/home/vote-banner-v1.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/pages/home/vote-banner-v2.jpg">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
             </div>
         </section>
     </div>
@@ -70,4 +88,4 @@
     </div>
 </main>
 
-<?php include('content/stdFooter.php'); ?>
+<?php include('includes/stdFooter.php'); ?>

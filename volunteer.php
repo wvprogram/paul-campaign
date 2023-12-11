@@ -1,10 +1,10 @@
-<?php include('content/stdHeaderStart.php'); ?>
-<?php include('content/pages/stdHeaderVolunteerEnd.php'); ?>
+<?php include('includes/stdHeaderStart.php'); ?>
+<?php include('includes/pages/stdHeaderVolunteerEnd.php'); ?>
 
 
 <main class="volunteer">
-    <h1>Vote For Me</h1>
+    <h1>Volunteer</h1>
 </main>
 
 
-<?php include('content/stdFooter.php'); ?>
+<?php include('includes/stdFooter.php'); ?>

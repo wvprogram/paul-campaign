@@ -1,7 +1,7 @@
     <!-- Custom Meta -->
     <meta name="description" content="A description of the page">
     
-    <title>Vote For Paul</title>
+    <title>Volunteer Paul Yang</title>
 </head>
 <body>
-    <?php include('content/header.php'); ?>
+    <?php include('includes/header.php'); ?>
