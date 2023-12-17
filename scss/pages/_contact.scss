@@ -1,8 +1,8 @@
 @use '../globals';
 
-.vote {
+.contact {
     /**
-    *  vote general styling
+    *  contact general styling
     **/
     .container {
         display: flex;
@@ -11,7 +11,7 @@
         flex-direction: column;
     }
 
-    .vote-content {
+    .contact-content {
         width: 60%;
         padding-top: 10rem;
 
@@ -20,77 +20,13 @@
         }
     }
 
-    .bold-text {
-        font-weight: 600;
-    }
-
-    h2 {
-        font-weight: 700;
-        color: globals.$blue-color;
-    }
-
-    h3 {
-        margin-bottom: 1rem;
-        color: globals.$blue-color;
-    }
-
-    p {
-        margin-bottom: 0.5rem;
-        line-height: 1.5rem;
-    }
-
-    a {
-        color: globals.$alink-color;
-    }
-
-    ul {
-        margin-left: 2.5rem;
-        margin-bottom: 0.5rem;
-        
-        li{
-            list-style-type: disc;
-            margin-bottom: 0.5rem;
-            line-height: 1.5rem;
-        }
-    }
-
-    hr {
-        margin-block: 1rem;
-        color: globals.$lightgray-color;
-    }
-
-    //  title styling
-    .vote-title {
-        margin-top: 2rem;
-        margin-bottom: 4rem;
-        h2>span {
-            text-transform: uppercase;
-        }
-    }
-
-    //  voting by mail styling
-    .vote-mail {
-        margin-bottom: 2rem;
-    }
-
-    //  voting in-person styling
-    .vote-in-person {
-        margin-block: 2rem;
-    }
-
-    //  election day styling
-    .vote-election-day {
-        margin-block: 2rem;
-    }
-
-    //  form styling
     .form-container {
-        margin-top: 4rem;
-        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 6rem;
 
         h3 {
-            text-align: center;
-            margin-bottom: 1.5rem
+            margin-bottom: 1.5rem;
+            color: globals.$blue-color;
         }
 
         form {
@@ -100,13 +36,6 @@
             flex-direction: column;
             gap: 1.5rem;
 
-            ul {
-                margin-left: 0;
-                li {
-                    list-style-type: none;
-                }
-            }
-
             .contact-information {
                 display: flex;
                 flex-wrap: wrap;
@@ -115,6 +44,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 0.5rem;
+                    list-style-type: none;
                     label {
                         color: globals.$blue-color;
                     }
@@ -123,20 +53,24 @@
                         padding: 1rem 0.5rem;
                         font-size: 1rem;
                     }
+                    textarea {
+                        border: 1px solid black;
+                        padding: 1rem 0.5rem;
+                        font-size: 1rem;
+                    }
                 }
-
+    
                 #formFname, #formLname { width: 49%; }
-                #formAddress, #formEmail, #formTelephone { width: 100%; }
-
+                #formAddress, #formEmail, #formTelephone, #formMessage { width: 100%; }
+    
                 @media screen and (max-width: 1362px) {
                     #formFname, #formLname { width: 100%; }
                 }
             }
 
-            .monetary-donation {
-                li>input {
-                    padding: 1rem 0.5rem;
-                    font-size: 1rem;
+            .disclosure {
+                li {
+                    line-height: 1.5rem;
                 }
             }
         }
@@ -165,24 +99,6 @@
                 opacity: 0.6;
                 cursor: pointer;
                 transition: all 0.3s ease-in-out;
-            }
-        }
-    }
-
-    //  image gallery section styling
-    .vote-gallery {
-        margin-top: 2rem;
-        margin-bottom: 6rem;
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-
-            img {
-                max-width: 374px;
-                width: 100%;
             }
         }
     }

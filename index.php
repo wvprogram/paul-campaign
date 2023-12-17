@@ -1,6 +1,7 @@
 <?php include('includes/stdHeaderStart.php'); ?>
 <?php include('includes/pages/stdHeaderHomeEnd.php'); ?>
 
+
 <main class="home">
     <div class="bg-image">
         <div class="container">
@@ -16,31 +17,7 @@
 
                 <div class="form-container">
                     <h1>Join Our Campaign</h1>
-                    <form id="join-campaign" action="#">
-                        <ul>
-                            <li id="formFname">
-                                <label for="fname">First Name</label>
-                                <input type="text" id="fname" name="fname">
-                                <!-- <small class="error">First Name is required</small> -->
-                            </li>
-                            <li id="formLname">
-                                <label for="lname">Last Name</label>
-                                <input type="text" id="lname" name="lname">
-                                <!-- <small class="error">Last Name is required</small> -->
-                            </li>
-                            <li id="formZip">
-                                <label for="zip">Zip Code</label>
-                                <input type="text" id="zip" name="zip">
-                                <!-- <small class="error">Zip Code is required</small> -->
-                            </li>
-                            <li id="formEmail">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email">
-                                <!-- <small class="error">Email is required</small> -->
-                            </li>
-                        </ul>
-                        <input class="submitButton" type="submit" value="Submit" />
-                    </form>
+                    <?php include('includes/forms/campaign.html'); ?>
                 </div>
             </section>
         </div>
@@ -87,5 +64,8 @@
         </section>
     </div>
 </main>
+
+
+<script src="script/header.js"></script>
 
 <?php include('includes/stdFooter.php'); ?>

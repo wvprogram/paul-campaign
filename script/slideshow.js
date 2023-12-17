@@ -1,3 +1,7 @@
+/**
+ *  script to rotate through slide show
+ ***/
+
 let slideIndex = 0;
 showSlides();
 

@@ -1,0 +1,100 @@
+<form id="campaign" action="#">
+    <ul class="contact-information">
+        <li id="formFname">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+            <!-- <small class="error">First Name is required</small> -->
+        </li>
+        <li id="formLname">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+            <!-- <small class="error">Last Name is required</small> -->
+        </li>
+        <li id="formAddress">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+            <!-- <small class="error">Full address is required</small> -->
+        </li>
+        <li id="formEmail">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <!-- <small class="error">Email is required</small> -->
+        </li>
+        <li id="formTelephone">
+            <label for="telephone">Phone</label>
+            <input type="tel" id="telephone" name="telephone">
+            <!-- <small class="error">Telephone number is required</small> -->
+        </li>
+    </ul>
+    <ul class="voting-date">
+        <li>
+            <input type="radio" id="early" name="voting-date" value="early">
+            <label for="early">I'm a Ward 6 resident and will vote EARLY for Paul Yang in 2024!</label>
+        </li>
+        <li>
+            <input type="radio" id="election-day" name="voting-date" value="election-day">
+            <label for="election-day">I'm a Ward 6 resident and will vote for Paul Yang on Election Day, Tuesday, March 18, 2024!</label>
+        </li>
+    </ul>
+    <ul class="volunteer-activity">
+        <p>I want to help:</p>
+        <li>
+            <input type="checkbox" id="door-knock" name="door-knock" value="door-knock">
+            <label for="door-knock"> Door knock voters</label>
+        </li>
+        <li>
+            <input type="checkbox" id="call" name="call" value="call">
+            <label for="call"> Call voters</label>
+        </li>
+        <li>
+            <input type="checkbox" id="text" name="text" value="text">
+            <label for="text"> Text voters</label>
+        </li>
+        <li>
+            <input type="checkbox" id="raise-money" name="raise-money" value="raise-money">
+            <label for="raise-money"> Help raise money</label>
+        </li>
+        <li>
+            <input type="checkbox" id="host" name="host" value="host">
+            <label for="host"> Host a meet and greet</label>
+        </li>
+        <li>
+            <input type="checkbox" id="office-work" name="office-work" value="office-work">
+            <label for="office-work"> Do general office work</label>
+        </li>
+        <li>
+            <input type="checkbox" id="display-sign" name="display-sign" value="display-sign">
+            <label for="display-sign"> Display a lawn sign in my yard</label>
+        </li>
+        <li>
+            <input type="checkbox" id="put-sign" name="put-sign" value="put-sign">
+            <label for="put-sign"> Help put up lawn signs</label>
+        </li>
+        <li>
+            <input type="checkbox" id="food" name="food" value="food">
+            <label for="food"> Donate food for volunteers</label>
+        </li>
+    </ul>
+    <ul class="monetary-donation">
+        <p>I pledge to donate in 2024!</p>
+        <li>
+            <input type="text" id="monetary" name="monetary" value="$" />
+        </li>
+    </ul>
+    <ul class="disclosure">
+        <li>
+            <input type="checkbox" id="opt-in" name="opt-in" value="opt-in">
+            <label for="opt-in"> I agree to be contacted by Paul Yang for St. Paul City Supreme Court via call, email, and text. To opt-out, you can reply “stop” at any time or click the unsubscribe link in the emails. Message and data rates may apply.</label>
+            <!-- <small class="error">Required to opt-in</small> -->
+        </li>
+        <li>
+            <input type="checkbox" id="policy" name="policy" value="policy">
+            <label for="policy"> By ticking this box I agree that I have read the privacy policy.</label>
+            <!-- <small class="error">Required to read privacy policy</small> -->
+        </li>
+    </ul>
+
+    <input class="submitButton" type="submit" value="Submit" />
+
+    <p>Read our <a href="#">privacy policy</a> for information on how we handle your data and what your rights are.</p>
+</form>
