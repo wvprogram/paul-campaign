@@ -66,6 +66,4 @@
 </main>
 
 
-<script src="script/header.js"></script>
-
 <?php include('includes/stdFooter.php'); ?>

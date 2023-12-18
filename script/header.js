@@ -1,14 +1,16 @@
 /***
- *  script to change background-color of header for Vote and Contact webpage
+ *  script to change header into solid color when scrolling
  ***/
-if (
-    (window.location.href === 'http://localhost:4000/vote.php') ||
-    (window.location.href === 'http://localhost:4000/contact.php') ||
-    (window.location.href === 'http://localhost:4000/volunteer.php')
-) {
-    // select header tag
-    let headTag = document.querySelector("header");
 
-    //  add background-color to header tag
-    headTag.style.backgroundColor = "#0a3161";
-}
+// select header tag
+let headTag = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 128) {
+        //  add background-color class to header tag
+        headTag.classList.add("solid-header");
+    } else {
+        //  remove background-color class to header tag
+        headTag.classList.remove("solid-header");
+    }
+})

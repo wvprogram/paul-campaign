@@ -2,8 +2,60 @@
 
 .volunteer {
     /**
+     *  top image parallax effect
+     **/
+     .parallax {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+
+        h1 {
+            position: absolute;
+            color: globals.$white-color;
+            padding-inline: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+            @media screen and (max-width: 1300px) {
+                font-size: 2rem;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            // left: 0;
+            width: 100%;
+            pointer-events: none;
+
+            @media screen and (max-width: 1500px) {
+                height: 478px;
+                object-fit: none;
+            }
+        }
+
+        @media screen and (max-width: 1700px) {
+            height: 70vh;
+        }
+        @media screen and (max-width: 1600px) {
+            height: 65vh;
+        }
+        @media screen and (max-width: 1500px) {
+            height: 60vh;
+        }
+    }
+
+
+    /**
     *  volunteer general styling
     **/
+    //  styling to get parallax effect
+    .volunteer-content {
+        position: relative;
+        background: globals.$white-color;
+    }
+
     .container {
         display: flex;
         justify-content: center;
@@ -11,13 +63,13 @@
         flex-direction: column;
     }
 
-    .volunteer-content {
+    .volunteer-details {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 60%;
-        padding-top: 10rem;
+        margin-top: 4rem;
 
         @media screen and (max-width: 1000px) {
             width: 100%;
@@ -29,6 +81,10 @@
         margin-bottom: 4rem;
         text-align: center;
         color: globals.$blue-color;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 2rem;
+        }
     }
 
     p {
