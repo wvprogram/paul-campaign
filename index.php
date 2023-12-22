@@ -8,7 +8,7 @@
             <section class="home-content">
                 <!-- Need Image here -->
                 <div class="logo-content">
-                    <img src="../images/pages/home/logo.png" alt="Paul Yang Logo">
+                    <img src="images/pages/home/logo.png" alt="Paul Yang Logo">
                     <div class="logo-information">
                         <h1>Paul Yang</h1>
                         <p>Minnesota Supreme Court</p>
